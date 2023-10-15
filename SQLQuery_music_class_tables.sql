@@ -1,0 +1,92 @@
+CREATE TABLE students
+    (id INT IDENTITY PRIMARY KEY,
+    name varchar(50),
+    grade INT,
+    instrument_cup INT,
+    instrument_mbira INT);
+
+CREATE TABLE instruments
+    (id INT IDENTITY PRIMARY KEY, instr_name varchar(50));
+
+CREATE TABLE partner_mbira
+    (id INT IDENTITY PRIMARY KEY, partner1 INT, partner2 INT, part varchar(50), instrument INT);
+
+INSERT INTO students (name, grade, instrument_cup, instrument_mbira) VALUES 
+('Alena', 3, 1, 6),
+('Danaee', 3, 1, 9),
+('Winter', 3, 1, 6),
+('Zoey', 3, 1, 11),
+('Gus', 3, 1, 12),
+('Charlie', 3, 1, 12),
+('Caroline', 3, 1, 8),
+('Meotikah', 3, 2, 6),
+('Julia', 3, 2, 11),
+('Alani', 3, 2, 8),
+('Beth', 3, 2, 15),
+('Kaylin', 3, 2, 15),
+('Mariah', 3, 2, 6),
+('Rylnd', 3, 3, 9),
+('Ridglea', 3, 5, 6),
+('Cindi', 3, 3, 9),
+('Ady', 3, 6, 6),
+('Ryver', 3, 6, 10),
+('Kasen', 3, 8, 9),
+('Araceli', 3, 8, 8),
+('Mollye', 3, 6, 8),
+('Sophie', 4, 1, 7),
+('Alexia', 4, 2, 7),
+('Brooklyn', 4, 2, 14),
+('Tori', 4, 2, 12),
+('Conner', 4, 2, 6),
+('Anny', 4, 2, 8),
+('Alexandra', 4, 2, 12),
+('Cyrus', 4, 5, 8),
+('Calep', 4, 5, 8),
+('Kevin', 4, 5, 8),
+('Josiah', 4, 5, 6),
+('Kamille', 4, 3, 6),
+('Erick', 4, 5, 8),
+('Natalie', 4, 4, 10),
+('Violet', 4, 4, 6),
+('Emma', 4, 8, 14),
+('Justice', 4, 7, 13),
+('Joseph', 4, 6, 13);
+
+INSERT INTO instruments (instr_name) VALUES
+('boomwhacker'),
+('cup'),
+('drum_white'),
+('drum_bongos'),
+('drum_red'),
+('xylo_alto'),
+('xylo_bass'),
+('xylo_soprano'),
+('met_alto'),
+('met_bass'),
+('glock_soprano'),
+('glock_alto'),
+('black_piano'),
+('silver_piano'),
+('boomwhacker_piano');
+
+INSERT INTO partner_mbira (partner1, partner2, part, instrument) VALUES
+(2, 16, 'bass', 9),
+(19, 14, 'bass', 9),
+(17, 1, 'bass', 6),
+(8, 3, 'bass', 6),
+(13, 15, 'bass', 6),
+(33, 36, 'bass', 6),
+(26, 32, 'bass', 6),
+(5, 6, 'bass', 12),
+(35, 18, 'bass', 10),
+(22, 23, 'bass', 7),
+(24, 37, 'bass', 14),
+(11, 12, 'soprano', 15),
+(25, 28, 'soprano', 12),
+(38, 39, 'soprano', 13),
+(4, 9, 'soprano', 11),
+(7, 20, 'soprano', 8),
+(10, 10, 'soprano', 8),
+(21, 27, 'soprano', 8),
+(29, 30, 'soprano', 8),
+(31, 34, 'soprano', 8);
