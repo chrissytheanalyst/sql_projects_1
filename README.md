@@ -1,20 +1,24 @@
 # sql_projects_1
-A collection of my sample SQL files
+A collection of my sample SQL project files
 
 # Project "Superbowls"
 Data source: https://gist.github.com/pamelafox/3d8ab901def3577a8bfc881f6255d3f6
 
 1 query file
 
+Tables includes information for all NLF Superbowl games: team names, hosting location, MVP players, scores
+
 Questions answered within queries:
 
-What are average, max, and min values in the data?
-
-What about those numbers per category in the data (using HAVING)?
-
-What ways are there to group the data values that don’t exist yet (using CASE)?
-
-What interesting ways are there to filter the data (using AND/OR)?
+How many Superbowls have taken place? 
+How many players have earned MVP more than once? 
+Which stadiums have hosted a Superbowl more than once?
+Which teams have won a Superbowl more than once, and also lost more than once?
+What was the highest scoring game? (using MAX aggregate values for the highest scoring winner)
+What was the AVG score of all winning team points, and also the AVG score for losing team points?
+Created a CASE and GROUPBY that categorized a point spread for all games in 3 groups: tied games, less than 10 point spread (close game), and more than 10 point spread (big win).
+Ordered list of winners by points scored.
+Filtered a list of winning teams where winner points and loser points were in certain ranges (such as winner points greater than 15 OR loser points less than 10) 
 
 # Project "Music Class"
 
